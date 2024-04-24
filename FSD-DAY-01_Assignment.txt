@@ -1,0 +1,35 @@
+1. Write a Difference between HTTP1.1 vs HTTP2.
+
+	i) Working:
+		HTTP1.1 works on the textual format.
+		HTTP2 works on the binary protocol.
+
+	ii) Multiplexing:
+		HTTP1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+		HTTP2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+	iii) Header compression:
+		Small files load more quickly than large ones. To speed up web performance, both HTTP1.1 compress HTTP messages to make them smaller.
+		HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets.
+
+	iV) Stream Prioritization:
+		HTTP2 introduces stream prioritization, allowing clients to assign priorities to different resources. Better utilization of network resources, leading to improved performance and user experience.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write about objects and its internal representation in Javascript.
+
+	OBJECTS:
+		They are used to represent real-world entities, such as cars, people, and products. Objects can also be used to store collections of data, such as a list of students or a set of products.
+
+	INTERNAL REPRESENTATION:
+
+		i) Properties and Prototypes:
+			objects in JavaScript are often implemented using a combination of properties and an internal reference to another object called the prototype.
+
+		ii) Property Descriptors:
+			 Each property in JavaScript has associated property descriptors that define its behavior, such as whether it is writable, enumerable, or configurable. These descriptors can be accessed and modified using methods like "Object.getOwnPropertyDescriptor()".
+
+		iii) Property Lookup:
+			 When accessing a property of an object, JavaScript engines follow a process called property lookup. If the property exists directly on the object, it's accessed immediately. If not, the engine looks up the prototype chain until it finds the property or reaches the end of the chain 
+
